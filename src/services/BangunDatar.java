@@ -1,6 +1,6 @@
-package Inheritance;
+package services;
 
-abstract class BangunDatar {
+public abstract class BangunDatar {
     public abstract void Bangun();
     public abstract void Karakteristik();
     public abstract double Luas();

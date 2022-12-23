@@ -1,4 +1,4 @@
-package Inheritance;
+import models.*;
 
 import java.util.*;
 
@@ -31,7 +31,7 @@ public class Main {
                     persegi.Bangun();
                     persegi.Karakteristik();
                     System.out.println("Sisi Persegi = ");
-                    persegi.sisi = sc.nextInt();
+                    persegi.setSisi(sc.nextInt());
                     System.out.println("Luas Persegi = " + persegi.Luas());
                     System.out.println("Keliling Persegi = " + persegi.Keliling());
                 break;
@@ -39,9 +39,9 @@ public class Main {
                     segitiga.Bangun();
                     segitiga.Karakteristik();
                     System.out.println("Alas Segitiga = ");
-                    segitiga.alas = sc.nextInt();
+                    segitiga.setAlas(sc.nextInt());
                     System.out.println("Tinggi Segitiga = ");
-                    segitiga.tinggi = sc.nextInt();
+                    segitiga.setTinggi(sc.nextInt());
                     System.out.println("Luas Segitiga = " + segitiga.Luas());
                     System.out.println("Keliling Segitiga = " + segitiga.Keliling());
                 break;
@@ -49,7 +49,7 @@ public class Main {
                     lingkaran.Bangun();
                     lingkaran.Karakteristik();
                     System.out.println("Jari-Jari Lingkaran = ");
-                    lingkaran.jari = sc.nextInt();
+                    lingkaran.setJari(sc.nextInt());
                     System.out.println("Luas Lingkaran = " + lingkaran.Luas());
                     System.out.println("Keliling Lingkaran = " + lingkaran.Keliling());
                     break;
@@ -58,8 +58,8 @@ public class Main {
                     kubus.Karakteristik();
                     System.out.println("Sisi Kubus = ");
                     kubus.setSisi(sc.nextInt());
-                    System.out.println("Volume Kubus = " + kubus.Volume());
-                    System.out.println("Luas Permukaan Kubus = " + kubus.LuasP());
+                    System.out.println("volume Kubus = " + kubus.volume());
+                    System.out.println("Luas Permukaan Kubus = " + kubus.luasP());
                     break;
                 case 5 :
                     prisma.Bangun();
@@ -69,17 +69,17 @@ public class Main {
                     System.out.println("Tinggi Alas Prisma = ");
                     prisma.setTinggi(sc.nextInt());
                     System.out.println("Tinggi Prisma = ");
-                    prisma.tinggiP = sc.nextInt();
-                    System.out.println("Volume Prisma = " + prisma.Volume());
-                    System.out.println("Luas Permukaan Prisma = " + prisma.LuasP());
+                    prisma.setTinggiP(sc.nextInt());
+                    System.out.println("volume Prisma = " + prisma.volume());
+                    System.out.println("Luas Permukaan Prisma = " + prisma.luasP());
                     break;
                 case 6 :
                     bola.Bangun();
                     bola.Karakteristik();
                     System.out.println("Jari-Jari Bola = ");
                     bola.setJari(sc.nextInt());
-                    System.out.println("Volume Bola = " + bola.Volume());
-                    System.out.println("Luas Permukaan Bola = " + bola.LuasP());
+                    System.out.println("volume Bola = " + bola.volume());
+                    System.out.println("Luas Permukaan Bola = " + bola.luasP());
                     break;
                 case 7 : System.exit(0);
             }

@@ -1,7 +1,14 @@
-package Inheritance;
+package models;
 
-public class Prisma extends Segitiga implements BangunRuang{
+import services.BangunRuang;
+
+public class Prisma extends Segitiga implements BangunRuang {
     int tinggiP;
+
+    public void setTinggiP(int tinggiP) {
+        this.tinggiP = tinggiP;
+    }
+
     @Override
     public void Bangun() {
         System.out.println("Bangun Prisma");
@@ -17,13 +24,13 @@ public class Prisma extends Segitiga implements BangunRuang{
     }
 
     @Override
-    public double Volume() {
+    public double volume() {
         double VolumePrisma = ((Luas() / 2) * tinggiP);
         return VolumePrisma;
     }
 
     @Override
-    public double LuasP() {
+    public double luasP() {
         double LuasPrisma = (2 * Luas()) + (Keliling() * tinggiP);
         return LuasPrisma;
     }

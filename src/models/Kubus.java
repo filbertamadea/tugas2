@@ -1,6 +1,8 @@
-package Inheritance;
+package models;
 
-public class Kubus extends Persegi implements BangunRuang{
+import services.BangunRuang;
+
+public class Kubus extends Persegi implements BangunRuang {
 
     @Override
     public void Bangun() {
@@ -17,12 +19,12 @@ public class Kubus extends Persegi implements BangunRuang{
     }
 
     @Override
-    public double Volume() {
+    public double volume() {
         return Luas() * sisi;
     }
 
     @Override
-    public double LuasP() {
+    public double luasP() {
         return 6 * Luas();
     }
 }

@@ -1,6 +1,8 @@
-package Inheritance;
+package models;
 
-public class Segitiga extends BangunDatar{
+import services.BangunDatar;
+
+public class Segitiga extends BangunDatar {
     int alas, tinggi;
 
     public void setAlas(int alas) {

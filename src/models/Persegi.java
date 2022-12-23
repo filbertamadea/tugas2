@@ -1,6 +1,8 @@
-package Inheritance;
+package models;
 
-public class Persegi extends BangunDatar{
+import services.BangunDatar;
+
+public class Persegi extends BangunDatar {
     int sisi;
     public void setSisi(int sisi) {
         this.sisi = sisi;

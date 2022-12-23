@@ -1,6 +1,8 @@
-package Inheritance;
+package models;
 
-public class Lingkaran extends BangunDatar{
+import services.BangunDatar;
+
+public class Lingkaran extends BangunDatar {
     double jari, phi=3.14;
 
     public void setJari(double jari) {

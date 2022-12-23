@@ -1,6 +1,8 @@
-package Inheritance;
+package models;
 
-public class Bola extends Lingkaran implements BangunRuang{
+import services.BangunRuang;
+
+public class Bola extends Lingkaran implements BangunRuang {
 
     @Override
     public void Bangun() {
@@ -17,13 +19,13 @@ public class Bola extends Lingkaran implements BangunRuang{
     }
 
     @Override
-    public double Volume() {
+    public double volume() {
         double Volume = (phi * jari * jari * jari) * (4/3);
         return Volume;
     }
 
     @Override
-    public double LuasP() {
+    public double luasP() {
         double Luas = 4 * Luas();
         return Luas;
     }
